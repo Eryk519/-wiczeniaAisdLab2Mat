@@ -1,0 +1,26 @@
+class Square:
+    side: float
+
+    def __init__(self, side: int) -> None:
+        self.side = side
+
+    def area(self, side: int) -> int:
+        return side*side
+
+    def perimeter(self, side: int) -> int:
+        return 4*side
+
+
+class Traingle:
+    side: float
+    height: float
+
+    def __init__(self, side: int, height: int) -> None:
+        self.side = side
+        self.height = height
+
+    def area(self, side: int, height: int) -> float:
+        return (side * height) / 2
+
+    def perimeter(self, side: int, height: int) -> float:
+        return 3 * side
