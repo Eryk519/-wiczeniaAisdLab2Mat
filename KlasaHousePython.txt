@@ -1,0 +1,30 @@
+class House:
+    windows_count: int
+    color: str
+
+    def __init__(self, windows_count: int, color: str) -> None:
+        self.windows_count = windows_count
+        self.color = color
+
+    def change_color(self, new_color: str) -> None:
+        if self.color == new_color:
+            print('Operacja jest niedozwolona')
+            return
+
+        self.color = new_color
+
+    def __str__(self) -> str:
+        return f'liczba okien: {self.windows_count}, kolor: {self.color}'
+
+
+house1 = House(10, 'yellow')
+house2 = House(15, 'green')
+
+print(house1.windows_count)
+print(house1.color)
+
+house1.change_color('blue')
+house2.change_color('red')
+print(house1.color)
+print(house1)
+print(house2)
