@@ -1,0 +1,17 @@
+class Traingle:
+    side: float
+    height: float
+
+    def __init__(self, side: int, height: int) -> None:
+        self.side = side
+
+    def area(self, side: int, height: int) -> float:
+        return (side*height)/2
+
+    def perimeter(self, side: int, height: int) -> float:
+        return 3*side
+
+Traingle1 = Traingle(5,7)
+
+print(Traingle1.area(side=5, height=7))
+print(Traingle1.perimeter(side=5, height=7))
