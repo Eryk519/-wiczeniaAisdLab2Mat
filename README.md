@@ -1,1 +1,1 @@
-# -wiczeniaAisdLab2Mat
+# CwiczeniaAisdLab2Mat
