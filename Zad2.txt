@@ -4,7 +4,8 @@ class Traingle:
 
     def __init__(self, side: int, height: int) -> None:
         self.side = side
-
+        self.height = height
+        
     def area(self, side: int, height: int) -> float:
         return (side*height)/2
 
