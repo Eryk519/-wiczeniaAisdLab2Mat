@@ -23,13 +23,8 @@ class Traingle:
 
     def perimeter(self, side: int) -> float:
         return 3 * side
-
-list1= []
-new_list = []
-count = 10
-for x in new_list:
-    while new_list:
-        count +=1
-        if x >= 11 and x < 20:
-            list1.append(new_list)
-        print(list1)
+        
+list1 = []
+for x in range(11, 20):
+    list1.append(Square(x))
+print(list1)
