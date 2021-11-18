@@ -10,7 +10,6 @@ class Square:
     def perimeter(self, side: int) -> int:
         return 4*side
 
-
 class Traingle:
     side: float
     height: float
@@ -22,5 +21,15 @@ class Traingle:
     def area(self, side: int, height: int) -> float:
         return (side * height) / 2
 
-    def perimeter(self, side: int, height: int) -> float:
+    def perimeter(self, side: int) -> float:
         return 3 * side
+
+list1= []
+new_list = []
+count = 10
+for x in new_list:
+    while new_list:
+        count +=1
+        if x >= 11 and x < 20:
+            list1.append(new_list)
+        print(list1)
